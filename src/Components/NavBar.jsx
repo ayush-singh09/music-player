@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { SiBackblaze } from "react-icons/si";
 import { CiMenuFries } from "react-icons/ci";
-import { myContext } from "../utils/Context";
+import { myContext } from "./Context";
 
 function NavBar() {
   const {linksHeight, setLinksHeight } = useContext(myContext);

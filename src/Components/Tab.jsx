@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
-import { myContext } from "../utils/Context";
+import { myContext } from "./Context";
 
 function Tab({ data }) {
   const { playlists, setPlaylists } = useContext(myContext);

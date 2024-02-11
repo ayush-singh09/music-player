@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { MdPlayArrow } from "react-icons/md";
-import { myContext } from "../utils/Context";
+import { myContext } from "./Context";
 import Adding from "./Adding";
 
 function SongCard({ data }) {

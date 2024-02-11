@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { myContext } from "../utils/Context";
+import { myContext } from "./Context";
 import { RxCross2 } from "react-icons/rx";
 
 function Adding() {

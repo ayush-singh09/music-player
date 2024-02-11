@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { myContext } from "../utils/Context";
+import { myContext } from "./Context";
 import { RiArrowLeftCircleLine } from "react-icons/ri";
 import { MdDeleteForever } from "react-icons/md";
 import { IoIosRemoveCircleOutline } from "react-icons/io";

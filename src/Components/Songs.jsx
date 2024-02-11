@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import SongCard from "./SongCard";
-import { myContext } from "../utils/Context";
+import { myContext } from "./Context";
 
 function Songs() {
   const {songs} = useContext(myContext);

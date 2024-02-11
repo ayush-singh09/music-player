@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { myContext } from "../utils/Context";
+import { myContext } from "./Context";
 import Tab from "./Tab";
 
 function List() {

@@ -5,7 +5,7 @@ import Setting from "./Setting";
 import { Link, Route, Routes } from "react-router-dom";
 import Playlist from "./Playlist";
 import Adding from "./Adding";
-import { myContext } from "../utils/Context";
+import { myContext } from "./Context";
 
 function Content() {
   const { add, linksHeight, setLinksHeight } = useContext(myContext);
