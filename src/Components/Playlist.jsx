@@ -27,7 +27,7 @@ function Playlist() {
     (items) => items.playlistName == currentPlaylistName
   );
 
-  if (currentPlaylist.length() == 0) {
+  if (currentPlaylist.length == 0) {
     return (
       <div className="h-full w-[74%] bg-zinc-800 text-white p-5 flex flex-col gap-6 relative rounded-lg overflow-y-scroll no-scrollbar">
         <h1 className="text-red-400">Error: This page does not exist.</h1>
