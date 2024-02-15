@@ -31,7 +31,7 @@ function Tab({ data }) {
       <img
         className="h-16 w-16 rounded-full object-cover text-white"
         src={
-          url.length() > 0
+          url.length > 0
             ? url[0].photo
             : "https://images.unsplash.com/photo-1514248787438-077495e23674?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG5ld3xlbnwwfHwwfHx8MA%3D%3D"
         }
