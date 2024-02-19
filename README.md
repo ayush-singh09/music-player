@@ -1,7 +1,7 @@
-#Files Structure
+# Files Structure
 
-- ##Context.jsx (Contains all the data including song details and )
-  - ###App.jsx
+- ## Context.jsx (Contains all the data including song details and )
+  - ### App.jsx
     - NavBar.jsx
     - Content.jsx
       - SideBar.jsx (Contains Routes link)
