@@ -1,4 +1,4 @@
-*Files Structure
+* Files Structure
 
 - Context.jsx (Contains all the data including song details and )
   - App.jsx
