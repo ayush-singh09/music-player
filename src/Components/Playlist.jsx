@@ -8,20 +8,11 @@ import { IoIosRemoveCircleOutline } from "react-icons/io";
 function Playlist() {
   const navigate = useNavigate();
   const { playlists, removePlaylist, removeSong } = useContext(myContext);
-  function fromCamelCase(camelCase) {
-    return camelCase
-      .replace(/([a-z])([A-Z])/g, "$1 $2")
-      .split(" ")
-      .map((word) => {
-        return word.charAt(0).toUpperCase() + word.slice(1);
-      })
-      .join(" ");
-  }
 
   const goBack = () => navigate(-1);
 
   const { id } = useParams();
-  const currentPlaylistName = fromCamelCase(id);
+  const currentPlaylistName = id;
 
   const currentPlaylist = playlists.filter(
     (items) => items.playlistName == currentPlaylistName
