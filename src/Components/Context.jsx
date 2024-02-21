@@ -127,12 +127,12 @@ function Context(props) {
   const [add, setAdd] = useState(false);
   const [songs, setSongs] = useState(()=>{
     const storedData = localStorage.getItem('allSongs')
-    return storedData ? JSON.parse(storedData) : [data]
+    return storedData ? JSON.parse(storedData) : data
   });
   
   const [playlists, setPlaylists] = useState(()=>{
     const storedData = localStorage.getItem('allPlaylists');
-    return storedData ? JSON.parse(storedData) : [play];
+    return storedData ? JSON.parse(storedData) : play;
   });
 
   useEffect(()=>{
