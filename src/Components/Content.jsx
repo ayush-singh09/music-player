@@ -12,7 +12,7 @@ function Content() {
   return (
     <div className="content h-[90%]  flex justify-between">
       <div
-        className={`sidebar transition-transform ${linksHeight} w-[25%] rounded-lg overflow-hidden flex flex-col gap-2`}
+        className={`sidebar transition-transform transition-all ease-in-out duration-500 ${linksHeight} w-[25%] rounded-lg overflow-hidden flex flex-col gap-2`}
       >
         <Link
         onClick={()=>window.innerWidth<601?setLinksHeight('h-0'):null}
