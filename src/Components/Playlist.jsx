@@ -50,7 +50,7 @@ function Playlist() {
       <ul>
         {allSongs.map((song, index) => {
           return (
-            <li 
+            <li
               className="cursor-pointer border-b mt-2 p-2 border-zinc-600 flex items-center justify-between gap-5"
               key={index}
             >
@@ -64,7 +64,12 @@ function Playlist() {
                   {song.name} by {song.creator}
                 </h1>
               </div>
-              <div onClick={()=>{removeSong(song.name, currentPlaylistName)}} className="text-lg">
+              <div
+                onClick={() => {
+                  removeSong(song.name, currentPlaylistName);
+                }}
+                className="text-lg"
+              >
                 <IoIosRemoveCircleOutline />
               </div>
             </li>

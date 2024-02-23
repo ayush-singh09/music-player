@@ -31,7 +31,7 @@ function Tab({ data }) {
 
       <div className="mr-3">
         <h1 className="text-lg">{data.playlistName}</h1>
-        <h1 className="text-sm text-zinc-400"> Songs</h1>
+        <h1 className="text-sm text-zinc-400">Songs</h1>
       </div>
     </div>
   );

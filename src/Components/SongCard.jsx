@@ -16,7 +16,7 @@ function SongCard({ data }) {
           alt="Song Photo"
         />
       </div>
-      <h1 className="text-white font-semibold text-xl leading-none">{name}</h1>
+      <h1 className="text-white font-semibold text-lg leading-none">{name}</h1>
       <h1 className="text-zinc-300 text-sm">{creator}</h1>
       <div className="flex items-center gap-2">
         <button
