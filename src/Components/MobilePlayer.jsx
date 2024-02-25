@@ -1,4 +1,4 @@
-import React, { useContext, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { myContext } from "./Context";
 import { FaPlay } from "react-icons/fa";
 import { FaPause } from "react-icons/fa6";
@@ -18,6 +18,12 @@ function MobilePlayer() {
   const changeDuration = (val) => {
     timeRef.current.currentTime = val;
   };
+
+  useEffect(() => {
+    timeRef.current.play();
+    setPlaying(true);
+  }, [queue]);
+  
 
   const nextSong = () => {
     if (queue.length - 1 > index) {
@@ -64,7 +70,7 @@ function MobilePlayer() {
     return (
       <div className={`absolute transition-all ease-in-out duration-500 text-white ${isFull?"justify-end h-full flex-col gap-6 pb-10":"justify-between h-20"} flex items-center px-5 w-full bg-gradient-to-br from-black via-zinc-900 to-black bottom-0 left-0 border-t-2 border-white`}>
         {isFull?<h1 onClick={()=>{setIsFull(false)}} className=" cursor-pointer text-lg absolute top-10 left-10"><FaAngleDown /></h1>:null}
-        <div className={`${isFull?"w-full absolute top-[50%] transition-all ease-in-out duration-500 translate-y-[-50%] px-10 flex-col":""} items-center flex  gap-4  overflow-hidden`}>
+        <div className={`${isFull?"w-full absolute top-[45%] transition-all ease-in-out duration-500 translate-y-[-50%] px-10 flex-col":""} items-center flex  gap-4  overflow-hidden`}>
           <div className={`${isFull?"h-64 w-64 rounded":"h-14 w-14 rounded-full"} transition-all ease-in-out duration-500 bg-red-400  overflow-hidden`}>
             <img onClick={()=>setIsFull(true)} src={queue[index].photo} alt="song" />
           </div>
@@ -79,7 +85,7 @@ function MobilePlayer() {
         ></audio>
 
         <div className={`items-center gap-2 transition-all ease-in-out duration-500 ${!isFull && window.innerWidth<1000?"hidden":"flex"} ${isFull?"w-full":""}`}>
-          <h1>
+          <h1 className="w-16 text-center">
             {Math.floor(time / 60)}:{Math.floor(time % 60)}
           </h1>
           <input
@@ -92,7 +98,7 @@ function MobilePlayer() {
             }}
             className={`inp h-1 transition-all ease-in-out duration-500 ${isFull?"w-full":"w-64"} bg-zinc-500 cursor-pointer`}
           />
-          <h1>
+          <h1 className="w-16 text-center">
             {Math.floor(duration / 60)}:{Math.floor(duration % 60)}
           </h1>
         </div>
