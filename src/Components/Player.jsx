@@ -96,7 +96,7 @@ function Player() {
           >
             <img
               onClick={() => setIsFull(true)}
-              src={`${queue[index].photo}`}
+              src={queue[index].photo}
               alt="song"
             />
           </div>
@@ -108,7 +108,7 @@ function Player() {
             setTime(timeRef.current.currentTime);
             if (timeRef.current.currentTime == duration) nextSong();
           }}
-          src={`${queue[index].path}`}
+          src={queue[index].path}
         ></audio>
 
         <div
