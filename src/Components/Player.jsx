@@ -18,6 +18,7 @@ function Player() {
   const changeDuration = (val) => {
     timeRef.current.currentTime = val;
   };
+  console.log(queue[index].photo);
 
   const nextSong = () => {
     if (queue.length - 1 > index) {
