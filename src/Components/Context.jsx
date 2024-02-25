@@ -12,8 +12,8 @@ function Context(props) {
     {
       name: "Chal Wahan Jaate Hain",
       creator: "Arijit Singh",
-      photo: "../src/assets/Photos/Chal wahaan jaate hai.jpg",
-      path: "../src/assets/Songs/Chal Wahaan Jaate Hain.mp3",
+      photo: "/assets/Photos/Chal wahaan jaate hai.jpg",
+      path: "/assets/Songs/Chal Wahaan Jaate Hain.mp3",
     },
     {
       name: "Ek Mulakaat",
