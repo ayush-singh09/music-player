@@ -96,7 +96,7 @@ function Player() {
           >
             <img
               onClick={() => setIsFull(true)}
-              src={queue[index].photo}
+              src={`${queue[index].photo}`}
               alt="song"
             />
           </div>

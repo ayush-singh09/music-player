@@ -12,7 +12,7 @@ function Context(props) {
     {
       name: "Chal Wahan Jaate Hain",
       creator: "Arijit Singh",
-      photo: "../src/assets/Photos/chalWahaanJaateHai.jpg",
+      photo: "../src/assets/Photos/Chal wahaan jaate hai.jpg",
       path: "../src/assets/Songs/Chal Wahaan Jaate Hain.mp3",
     },
     {
@@ -35,7 +35,7 @@ function Context(props) {
     {
       name: "Chal Wahan Jaate Hain",
       creator: "Arijit Singh",
-      photo: "../src/assets/Photos/chalWahaanJaateHai.jpg",
+      photo: "../assets/Photos/Chal wahaan jaate hai.jpg",
       path: "../src/assets/Songs/Chal Wahaan Jaate Hain.mp3",
     },
     {
