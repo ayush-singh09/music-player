@@ -12,20 +12,20 @@ function Context(props) {
     {
       name: "Chal Wahan Jaate Hain",
       creator: "Arijit Singh",
-      photo: "Chal wahaan jaate hai.jpg",
-      path: "Chal Wahaan Jaate Hain.mp3",
+      photo: "Photos/Chal wahaan jaate hai.jpg",
+      path: "Song/Chal Wahaan Jaate Hain.mp3",
     },
     {
       name: "Ek Mulakaat",
       creator: "Arijit Singh",
-      photo: "src/assets/Photos/Ek mulakaat.jpg",
-      path: "src/assets/Songs/Ek Mulakaat.mp3",
+      photo: "Photos/Ek mulakaat.jpg",
+      path: "Song/Ek Mulakaat.mp3",
     },
     {
       name: "Girl I need You",
       creator: "Arijit Singh",
-      photo: "src/assets/Photos/Girl I Need You.jpg",
-      path: "src/assets/Songs/Girl I Need You.mp3",
+      photo: "Photos/Girl I Need You.jpg",
+      path: "Song/Girl I Need You.mp3",
     },
   ];
 
@@ -35,20 +35,20 @@ function Context(props) {
     {
       name: "Chal Wahan Jaate Hain",
       creator: "Arijit Singh",
-      photo: "Chal wahaan jaate hai.jpg",
-      path: "Chal Wahaan Jaate Hain.mp3",
+      photo: "Photos/Chal wahaan jaate hai.jpg",
+      path: "Song/Chal Wahaan Jaate Hain.mp3",
     },
     {
       name: "Ek Mulakaat",
       creator: "Arijit Singh",
-      photo: "src/assets/Photos/Ek mulakaat.jpg",
-      path: "src/assets/Songs/Ek Mulakaat.mp3",
+      photo: "Photos/Ek mulakaat.jpg",
+      path: "Song/Ek Mulakaat.mp3",
     },
     {
       name: "Girl I need You",
       creator: "Arijit Singh",
-      photo: "src/assets/Photos/Girl I Need You.jpg",
-      path: "src/assets/Songs/Girl I Need You.mp3",
+      photo: "Photos/Girl I Need You.jpg",
+      path: "Song/Girl I Need You.mp3",
     },
   ]);
 
